@@ -1,4 +1,4 @@
-# catkin-release-action
+# colcon-release-action
 
 GitHub Action to create a ROS package release candidate branch.
 
@@ -36,7 +36,7 @@ jobs:
         uses: actions/checkout@v2
       - name: create release
         id: create_release
-        uses: at-wat/catkin-release-action@v1
+        uses: at-wat/colcon-release-action@v1
         with:
           issue_title: ${{ github.event.issue.title }}
           git_user: @@MAINTAINER_LOGIN@@

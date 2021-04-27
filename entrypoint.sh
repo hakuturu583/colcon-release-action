@@ -52,7 +52,7 @@ git config user.email "${INPUT_GIT_EMAIL}"
 git fetch --tags --prune --unshallow
 
 # Update CHANGELOG
-catkin_generate_changelog -y
+colcon_generate_changelog -y
 
 if ${update}
 then
@@ -82,7 +82,7 @@ git add $(find . -name CHANGELOG.rst)
 git commit -m "Update changelog"
 
 # Bump version
-catkin_prepare_release -y --no-push --version ${INPUT_VERSION}
+colcon_prepare_release -y --no-push --version ${INPUT_VERSION}
 git tag -d ${INPUT_VERSION}
 
 # Show

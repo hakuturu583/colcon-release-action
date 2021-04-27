@@ -1,4 +1,4 @@
-name: "Catkin release candidate"
+name: "colcon release candidate"
 description: "Create a ROS package release candidate branch"
 inputs:
   github_token:
